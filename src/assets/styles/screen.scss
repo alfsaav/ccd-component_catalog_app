@@ -1,0 +1,66 @@
+:root{
+	--ccd-font-family: 'proxima-nova, arial, helvetica, sans-serif';
+	--ccd-font-size-base: 1.125rem;
+	--ccd-font-size-h1: 2.25rem;
+	--ccd-font-size-h2: 2rem;
+	--ccd-font-size-h3: 1.5rem;
+	--ccd-font-size-h4: 1.25rem;
+	--ccd-font-size-h5: 1.125rem;
+	--ccd-font-size-h6: 1rem;
+	--ccd-line-height-base: 1.222;
+	--ccd-line-height-h6: 1.1875;
+	--ccd-font-weight-heading: 700
+
+
+}
+
+html,
+body {
+  font-family:var(--ccd-font-family);
+  font-size:16px;
+  line-height:auto;
+  color:var(--ion-color-dark, #121212);
+}
+
+
+ion-card{
+	margin:0;
+}
+
+ion-card.ion-padding{
+	background-color: aliceblue;
+	ion-card-content,
+	ion-card-header{
+		padding: 0;
+	}
+}
+
+ion-button{
+	text-transform: capitalize;
+	font-weight: bold;
+	--box-shadow: 0 0 0 0;
+}
+
+ion-button.button-solid{
+	
+	--background-hover: var(--ion-color-secondary-shade,#005596);
+	--background-hover-opacity:1;
+}
+
+ion-select.ion-focusable,
+ion-input.sc-ion-input-md-h{
+	--highlight-color-focused: var(--ion-color-secondary,#0072C9);
+	--highlight-color-invalid: var(--ion-color-danger,#FC5757);
+	--highlight-color-valid: var(--ion-color-success,#2DD36F);
+}
+
+.ion-padding{
+
+	--padding-start: var(--ion-padding, 16px);
+    --padding-end: var(--ion-padding, 16px);
+    --padding-top: var(--ion-padding-top, 20px);
+    --padding-bottom: var(--ion-padding-bottom, 20px);
+
+	padding-top:var(--padding-top,20px);
+	padding-bottom:var(--padding-bottom,20px);
+}
