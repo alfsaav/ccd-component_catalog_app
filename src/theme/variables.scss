@@ -7,33 +7,32 @@
     --ccd-size-xs1:4px;
     --ccd-size-xs:8px;
     --ccd-size-sm:16px;
-    --ccd-size-base:20px;
+    --ccd-size-base:var(--ccd-size-xs, 8px);
     --ccd-size-md:24px;
     --ccd-size-lg:32px;
-    --ccd-size-xl:40px;
-    --ccd-size-xl1:48px;
-    --ccd-size-xl2:80px;
+    --ccd-size-xl:48px;
+    --ccd-size-xl1:96px;
 
 
-    --ion-grid-padding-xs: var(--ccd-size-sm, 16px);
-    --ion-grid-padding-sm: var(--ccd-size-sm, 16px);
-    --ion-grid-padding-md: var(--ccd-size-sm, 16px);
-    --ion-grid-padding-lg: var(--ccd-size-sm, 16px);
-    --ion-grid-padding-xl: var(--ccd-size-sm, 16px);
-    --ion-grid-column-padding-xs: var(--ccd-size-sm, 16px);
-    --ion-grid-column-padding-sm: var(--ccd-size-sm, 16px);
-    --ion-grid-column-padding-md: var(--ccd-size-sm, 16px);
-    --ion-grid-column-padding-lg: var(--ccd-size-sm, 16px);
-    --ion-grid-column-padding-xl: var(--ccd-size-sm, 16px);
+    --ion-grid-padding-xs: var(--ccd-size-xs, 8px);
+    --ion-grid-padding-sm: var(--ccd-size-xs, 8px);
+    --ion-grid-padding-md: var(--ccd-size-xs, 8px);
+    --ion-grid-padding-lg: var(--ccd-size-xs, 8px);
+    --ion-grid-padding-xl: var(--ccd-size-xs, 8px);
+    --ion-grid-column-padding-xs: var(--ccd-size-xs, 8px);
+    --ion-grid-column-padding-sm: var(--ccd-size-xs, 8px);
+    --ion-grid-column-padding-md: var(--ccd-size-xs, 8px);
+    --ion-grid-column-padding-lg: var(--ccd-size-xs, 8px);
+    --ion-grid-column-padding-xl: var(--ccd-size-xs, 8px);
 
-    --ion-padding: 16px;
-    --ion-margin: 16px;
+    --ion-padding:  var(--ccd-size-base, 8px);
+    --ion-margin: var(--ccd-size-base, 8px);
 
-    --ion-margin-top: 20px;
-    --ion-margin-bottom: 20px;
+    --ion-margin-top: var(--ccd-size-base, 8px);
+    --ion-margin-bottom: var(--ccd-size-base, 8px);
 
-    --ion-padding-top: 20px;
-    --ion-padding-bottom: 20px;
+    --ion-padding-top: var(--ccd-size-base, 8px);
+    --ion-padding-bottom: var(--ccd-size-base, 8px);
     
     --ion-color-primary: #002D56;
 	--ion-color-primary-rgb: 0,45,86;
