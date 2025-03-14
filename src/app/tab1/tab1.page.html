@@ -8,24 +8,93 @@
 
 <ion-content [fullscreen]="true">
   
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Page 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <ion-grid class="ion-padding">
+  <ion-grid class="ion-padding ccd_main_layout">
     <ion-row>
-      <ion-col size="12" size-sm="12">
-            <ion-card class="Ion Lists">
+      <ion-col size-sm="9">
+        <!-- MAIN Content -->
+        <main class="ccd_main_layout ccd_typography_encapsulated">
+          
+          
+          <h1 class="ccd_main_layout_title">Component Catalog</h1>
+          <p class="ccd_main_layout_subtitle">This is a catalog of all the components used in the DSDS app.</p>
+
+          <h1>Typography</h1>
+
+            <p>Typography is a crucial aspect of design that involves the art and technique of arranging type to make written language legible, readable, and visually appealing. In this section, we will explore various typographic elements and their usage within the DSDS app. Understanding and utilizing these elements effectively will enhance the overall user experience and ensure consistency across the application.</p>
+
+              <h1>Header 1</h1>
+              <h2>Header 2</h2>
+              <h3>Header 3</h3>
+              <h4>Header 4</h4>
+              <h5>Header 5</h5>
+              <h6>Header 6</h6>
+              <p>This is a paragraph of text. It provides information about the topic at hand.</p>
+              <a href="#">This is a link</a>
+              <br />
+              
+                <h3>Unordered List</h3>
+                <ul>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+                </ul>
+
+                <h3>Ordered List</h3>
+                <ol>
+                  <li>First item</li>
+                  <li>Second item</li>
+                  <li>Third item</li>
+                </ol>
+
+                <h3>Inline Text Elements</h3>
+                <p>This is an example of <strong>bold text</strong>, <em>italic text</em>, <u>underlined text</u>, and <code>inline code</code>.</p>
+
+                <h3>Preformatted Text</h3>
+                <pre>
+                This is an example of preformatted text.
+                It preserves both      spaces and line breaks.
+                </pre>
+
+                <h3>Code Block</h3>
+                <pre><code>
+                &lt;!-- This is an example of a code block --&gt;
+             
+                </code></pre>
+
+              <blockquote>
+                This is a blockquote. It is used to highlight a quote from a source.
+              </blockquote>
+              <dl>
+                <dt>Term 1</dt>
+                <dd>Description for term 1</dd>
+                <dt>Term 2</dt>
+                <dd>Description for term 2</dd>
+              </dl>
+              <table>
+                <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                </tr>
+                <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                </tr>
+                <tr>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                </tr>
+              </table>
+        
+            <ion-card class="Ion Typography">
 
               <ion-card-header>
-                <ion-card-title>Lists Video Games</ion-card-title>
-                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              <ion-card-title>Typography within an ION Card</ion-card-title>
+              <ion-card-subtitle>Examples of text elements</ion-card-subtitle>
               </ion-card-header>
 
               <ion-card-content>
-            
+        
+              <h3>Ion List Example</h3>
               <ion-list inset="true">
                 <ion-item>
                   <ion-label>Pokémon Yellow</ion-label>
@@ -42,91 +111,116 @@
                 <ion-item>
                   <ion-label>Super Mario World</ion-label>
                 </ion-item>
-              </ion-list>
-             </ion-card-content>
+                </ion-list>
+              </ion-card-content>
+            </ion-card>
+
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Ion Button</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Here's a small text description for the card content. Nothing more, nothing less.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fugiat aliquid, amet sequi nostrum sapiente eveniet ea aliquam iusto similique sed libero vel expedita dolores in neque veritatis, vero quas?
+              
+              <ion-grid class="ion-padding">
+                <ion-row>
+                  <ion-col> <ion-button>View More</ion-button></ion-col>
+                  <ion-col> <ion-button expand="block">View More</ion-button></ion-col>
+                  <ion-col> <ion-button expand="full">Edit</ion-button></ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    <ion-button>Default</ion-button>
+                    <ion-button shape="round">Round</ion-button>
+                    <ion-button>
+                      <ion-icon slot="icon-only" name="heart"></ion-icon>
+                    </ion-button>
+                    <ion-button shape="round">
+                      <ion-icon slot="icon-only" name="heart"></ion-icon>
+                    </ion-button>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    <ion-button>Default</ion-button>
+                    <ion-button fill="clear">Clear</ion-button>
+                    <ion-button fill="outline">Outline</ion-button>
+                    <ion-button fill="solid">Solid</ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+            </ion-card-content>
           </ion-card>
+        </main>
+      </ion-col>
+      <!-- END OF MAIN Content -->
+
+      <ion-col size="12" size-sm="3">
+        <!-- ASIDE Content -->
+         <aside class="ccd-filters">
+          <div class="ccd_search_bar_wrap ccd_form_group">
+            <ion-input label="Search by Keyword" label-placement="floating" fill="solid" placeholder="e.g. Street, Reception #, PLS #, 2024"></ion-input>
+          </div>
+          <ion-segment>
+            <ion-segment-button value="first" content-id="first">
+              <ion-label>First</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="second" content-id="second">
+              <ion-label>Second</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="third" content-id="third">
+              <ion-label>Third</ion-label>
+            </ion-segment-button>
+          </ion-segment>
+          <ion-segment-view>
+            <ion-segment-content id="first">First</ion-segment-content>
+            <ion-segment-content id="second">Second</ion-segment-content>
+            <ion-segment-content id="third">Third</ion-segment-content>
+          </ion-segment-view>
+          
+         </aside>
+        <aside>
+            <ion-card class="ccd_ion_select_card">
+
+              <ion-card-header>
+                <ion-card-title>Select</ion-card-title>
+                <ion-card-subtitle>Form Control Fields</ion-card-subtitle>
+              </ion-card-header>
+
+              <ion-card-content>
+                <ion-select aria-label="Fruit" interface="popover" placeholder="Select fruit">
+                  <ion-select-option value="apples">Apples</ion-select-option>
+                  <ion-select-option value="oranges">Oranges</ion-select-option>
+                  <ion-select-option value="bananas">Bananas</ion-select-option>
+                </ion-select>
+               </ion-card-content>
+            </ion-card>
+
+            <ion-card class="Ion Input Field">
+
+              <ion-card-header>
+                <ion-card-title>Input FIeld</ion-card-title>
+                <ion-card-subtitle>Form Control Fields</ion-card-subtitle>
+              </ion-card-header>
+    
+              <ion-card-content>
+                
+                <div class="ccd_form_group">
+                  <ion-input label="Solid input" label-placement="floating" fill="solid" placeholder="Enter text"></ion-input>
+                    <br />
+                  <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+                </div>
+
+              </ion-card-content>
+            </ion-card>
+        </aside>
       </ion-col>
 
-      <ion-col size="12" size-sm="6">
-
-        <ion-card class="ccd_ion_select_card">
-
-          <ion-card-header>
-            <ion-card-title>Select</ion-card-title>
-            <ion-card-subtitle>Form Control Fields</ion-card-subtitle>
-          </ion-card-header>
-
-          <ion-card-content>
-            <ion-select aria-label="Fruit" interface="popover" placeholder="Select fruit">
-              <ion-select-option value="apples">Apples</ion-select-option>
-              <ion-select-option value="oranges">Oranges</ion-select-option>
-              <ion-select-option value="bananas">Bananas</ion-select-option>
-            </ion-select>
-          </ion-card-content>
-      </ion-card>
-      </ion-col>
-
-<ion-col  size="12" size-sm="6">
-  <ion-card class="Ion Input Field">
-
-    <ion-card-header>
-      <ion-card-title>Input FIeld</ion-card-title>
-      <ion-card-subtitle>Form Control Fields</ion-card-subtitle>
-    </ion-card-header>
-
-    <ion-card-content>
-      <ion-input label="Solid input" label-placement="floating" fill="solid" placeholder="Enter text"></ion-input>
-        <br />
-      <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
-    </ion-card-content>
-  </ion-card>
-</ion-col>
-
-<ion-col size="12">
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Ion Button</ion-card-title>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fugiat aliquid, amet sequi nostrum sapiente eveniet ea aliquam iusto similique sed libero vel expedita dolores in neque veritatis, vero quas?
-     
-      
-
-      
-      <ion-grid class="ion-padding">
-        <ion-row>
-          <ion-col> <ion-button>View More</ion-button></ion-col>
-          <ion-col> <ion-button expand="block">View More</ion-button></ion-col>
-          <ion-col> <ion-button expand="full">Edit</ion-button></ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <ion-button>Default</ion-button>
-            <ion-button shape="round">Round</ion-button>
-            <ion-button>
-              <ion-icon slot="icon-only" name="heart"></ion-icon>
-            </ion-button>
-            <ion-button shape="round">
-              <ion-icon slot="icon-only" name="heart"></ion-icon>
-            </ion-button>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <ion-button>Default</ion-button>
-            <ion-button fill="clear">Clear</ion-button>
-            <ion-button fill="outline">Outline</ion-button>
-            <ion-button fill="solid">Solid</ion-button>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-
-    </ion-card-content>
-  </ion-card>
-</ion-col>
+      <!-- END OF ASIDE Content -->
 </ion-row>
 </ion-grid>
 

@@ -3,6 +3,18 @@
 
 :root {
 
+	--ccd-font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+    --ccd-font-size-base: 1rem; //16px
+    --ccd-font-size-h1: 2.25rem; // 36px 
+	--ccd-font-size-h2: 2rem; // 32px
+	--ccd-font-size-h3: 1.5rem; // 24px
+	--ccd-font-size-h4: 1.25rem; // 20px
+	--ccd-font-size-h5: 1.125rem; // 18px
+	--ccd-font-size-h6: 1rem; // 16px
+	--ccd-line-height-base: 1.222; // Base line height
+	--ccd-line-height-h6: 1.1875; // Line height for h6
+	--ccd-font-weight-heading: 700; // Font weight for headings
+
     --ccd-size-xs2:2px;
     --ccd-size-xs1:4px;
     --ccd-size-xs:8px;

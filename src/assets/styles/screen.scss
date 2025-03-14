@@ -1,37 +1,162 @@
-:root {
-    --ccd-font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-    --ccd-font-size-base: 1.125rem;
-    --ccd-font-size-h1: 2.25rem;
-    --ccd-font-size-h2: 2rem;
-    --ccd-font-size-h3: 1.5rem;
-    --ccd-font-size-h4: 1.25rem;
-    --ccd-font-size-h5: 1.125rem;
-    --ccd-font-size-h6: 1rem;
-    --ccd-line-height-base: 1.222;
-    --ccd-line-height-h6: 1.1875;
-    --ccd-font-weight-heading: 700;
-}
-
 html,
 body {
     font-family: var(--ccd-font-family);
     font-size: 16px;
-    line-height: auto;
+    line-height: none;
     color: var(--ion-color-dark, #121212);
 }
 
+
+//Typography
+// Custom Typography Styles for Headings, paragraphs, and other text elements
+
+// --ccd-font-size-base: 1.125rem;
+// --ccd-font-size-h1: 2.25rem;
+// --ccd-font-size-h2: 2rem;
+// --ccd-font-size-h3: 1.5rem;
+// --ccd-font-size-h4: 1.25rem;
+// --ccd-font-size-h5: 1.125rem;
+// --ccd-font-size-h6: 1rem;
+// --ccd-line-height-base: 1.222;
+// --ccd-line-height-h6: 1.1875;
+// --ccd-font-weight-heading: 700;
+
+h1 {
+	font-size: var(--ccd-font-size-h1, 2.25rem);
+}
+
+h2 {
+	font-size: var(--ccd-font-size-h2, 2rem);
+}
+
+h3 {
+	font-size: var(--ccd-font-size-h3, 1.5rem);
+}
+
+h4 {
+	font-size: var(--ccd-font-size-h4, 1.25rem);
+}
+
+h5 {
+	font-size: var(--ccd-font-size-h5, 1.125rem);
+}
+
+h6 {
+	font-size: var(--ccd-font-size-h6, 1rem);
+}
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, a, div, li, dt, dd, code, pre, blockquote {
+	font-family: var(--ccd-font-family);
+	color: var(--ion-color-dark, #121212);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: var(--ccd-font-weight-heading, 700);
+}
+
+a {
+	color: var(--ion-color-secondary, #0072C9);
+}
+
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	color: var(--ion-color-secondary-shade, #005596);
+}
+a:active {
+	color: var(--ion-color-secondary-tint, #1a80ce);
+}
+a:focus {
+	outline: 2px solid var(--ion-color-secondary, #0072C9);
+	outline-offset: 2px;
+}
+.ccd_typography_encapsulated {
+	
+	font-family: var(--ccd-font-family);
+	color: var(--ion-color-dark, #121212);
+
+		p, ul, ol, a, div, li, dt, dd, code, pre, blockquote {
+			font-size: var(--ccd-font-size-h5, 1.125rem);
+		}
+
+		ul,
+		ol {
+			margin: 0 0 1rem 1.5rem;
+			padding: 0;
+			list-style-position: inside;
+		}
+
+		li {
+			margin: 0.5rem 0;
+		}
+
+		dl {
+			margin: 0 0 1rem;
+		}
+
+		dt {
+			font-weight: bold;
+		}
+
+		dd {
+			margin: 0 0 0.5rem;
+			padding-left: 1rem;
+		}
+
+		code {
+			font-family: 'Courier New', Courier, monospace;
+			background-color: #f5f5f5;
+			padding: 0.2rem 0.4rem;
+			border-radius: 4px;
+		}
+
+		pre {
+			font-family: 'Courier New', Courier, monospace;
+			background-color: #f5f5f5;
+			padding: 1rem;
+			border-radius: 4px;
+			overflow: auto;
+		}
+
+		blockquote {
+			margin: 0 0 1rem;
+			padding: 0.5rem 1rem;
+			background-color: #f5f5f5;
+			border-left: 4px solid var(--ion-color-secondary, #0072C9);
+		}
+}
+
+//END Typography
+
+
+//Form Controls 
+
+//Searchbar wrap
+.ccd_search_bar_wrap{
+	background-color: var(--ion-color-secondary, #0072C9);
+	padding: 1rem;
+	//Add global variable
+	border-radius: 4px;
+}
+ion-button,
+button {
+	font-weight: bold;
+	text-transform: capitalize;
+    --box-shadow: 0 0 0 0;
+}
+
+.ccd_form_group{
+	font-size: var(--ccd-font-size-base, 1rem);
+}	
+
 ion-card {
-    margin: 0;
+    margin: 0 0 calc(var(--ion-padding, 8px) * 2);
 }
 
 ion-card.ion-padding {
     background-color: aliceblue;
-}
-
-ion-button {
-    text-transform: capitalize;
-    font-weight: bold;
-    --box-shadow: 0 0 0 0;
 }
 
 ion-button.button-solid {
@@ -45,7 +170,4 @@ ion-input.sc-ion-input-md-h {
     --highlight-color-invalid: var(--ion-color-danger, #FC5757);
     --highlight-color-valid: var(--ion-color-success, #2DD36F);
 }
-
-.ion-padding {
-    // Custom styles for .ion-padding
-}
+//END Form Controls 
