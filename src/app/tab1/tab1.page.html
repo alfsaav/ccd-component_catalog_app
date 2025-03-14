@@ -14,60 +14,59 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-grid >
+  <ion-grid class="ion-padding">
     <ion-row>
-      <ion-col> 
-  <ion-card class="Ion Lists">
+      <ion-col size="12" size-sm="12">
+            <ion-card class="Ion Lists">
 
-    <ion-card-header>
-      <ion-card-title>Lists Video Games</ion-card-title>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-    </ion-card-header>
+              <ion-card-header>
+                <ion-card-title>Lists Video Games</ion-card-title>
+                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              </ion-card-header>
 
-    <ion-card-content>
-      
-        <ion-list inset="true">
-          <ion-item>
-            <ion-label>Pokémon Yellow</ion-label>
-          </ion-item>
-          <ion-item>
-            <ion-label>Mega Man X</ion-label>
-          </ion-item>
-          <ion-item>
-            <ion-label>The Legend of Zelda</ion-label>
-          </ion-item>
-          <ion-item>
-            <ion-label>Pac-Man</ion-label>
-          </ion-item>
-          <ion-item>
-            <ion-label>Super Mario World</ion-label>
-          </ion-item>
-        </ion-list>
-    </ion-card-content>
-  </ion-card>
+              <ion-card-content>
+            
+              <ion-list inset="true">
+                <ion-item>
+                  <ion-label>Pokémon Yellow</ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Mega Man X</ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-label>The Legend of Zelda</ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Pac-Man</ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Super Mario World</ion-label>
+                </ion-item>
+              </ion-list>
+             </ion-card-content>
+          </ion-card>
+      </ion-col>
 
-</ion-col>
+      <ion-col size="12" size-sm="6">
 
-<ion-col>
+        <ion-card class="ccd_ion_select_card">
 
-  <ion-card class="ion-padding ccd_ion_select_card">
+          <ion-card-header>
+            <ion-card-title>Select</ion-card-title>
+            <ion-card-subtitle>Form Control Fields</ion-card-subtitle>
+          </ion-card-header>
 
-    <ion-card-header>
-      <ion-card-title>Select</ion-card-title>
-      <ion-card-subtitle>Form Control Fields</ion-card-subtitle>
-    </ion-card-header>
+          <ion-card-content>
+            <ion-select aria-label="Fruit" interface="popover" placeholder="Select fruit">
+              <ion-select-option value="apples">Apples</ion-select-option>
+              <ion-select-option value="oranges">Oranges</ion-select-option>
+              <ion-select-option value="bananas">Bananas</ion-select-option>
+            </ion-select>
+          </ion-card-content>
+      </ion-card>
+      </ion-col>
 
-    <ion-card-content>
-      <ion-select aria-label="Fruit" interface="popover" placeholder="Select fruit">
-        <ion-select-option value="apples">Apples</ion-select-option>
-        <ion-select-option value="oranges">Oranges</ion-select-option>
-        <ion-select-option value="bananas">Bananas</ion-select-option>
-      </ion-select>
-    </ion-card-content>
-</ion-card>
-</ion-col>
-
-<ion-col>
+<ion-col  size="12" size-sm="6">
   <ion-card class="Ion Input Field">
 
     <ion-card-header>
@@ -83,7 +82,7 @@
   </ion-card>
 </ion-col>
 
-<ion-col>
+<ion-col size="12">
   <ion-card>
     <ion-card-header>
       <ion-card-title>Ion Button</ion-card-title>
@@ -97,7 +96,7 @@
       
 
       
-      <ion-grid class="ion-no-padding">
+      <ion-grid class="ion-padding">
         <ion-row>
           <ion-col> <ion-button>View More</ion-button></ion-col>
           <ion-col> <ion-button expand="block">View More</ion-button></ion-col>
