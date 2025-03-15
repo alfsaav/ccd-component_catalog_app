@@ -10,7 +10,7 @@
   
   <ion-grid class="ion-padding ccd_main_layout">
     <ion-row>
-      <ion-col size-sm="9">
+      <ion-col size-lg="8" size-md="7" size-sm="6">
         <!-- MAIN Content -->
         <main class="ccd_main_layout ccd_typography_encapsulated">
           
@@ -159,29 +159,119 @@
       </ion-col>
       <!-- END OF MAIN Content -->
 
-      <ion-col size="12" size-sm="3">
+      <ion-col size="12" size-lg="4" size-md="5" size-sm="6" class="ccd_aside_col">
         <!-- ASIDE Content -->
-         <aside class="ccd-filters">
-          <div class="ccd_search_bar_wrap ccd_form_group">
-            <ion-input label="Search by Keyword" label-placement="floating" fill="solid" placeholder="e.g. Street, Reception #, PLS #, 2024"></ion-input>
-          </div>
-          <ion-segment>
-            <ion-segment-button value="first" content-id="first">
-              <ion-label>First</ion-label>
-            </ion-segment-button>
-            <ion-segment-button value="second" content-id="second">
-              <ion-label>Second</ion-label>
-            </ion-segment-button>
-            <ion-segment-button value="third" content-id="third">
-              <ion-label>Third</ion-label>
-            </ion-segment-button>
-          </ion-segment>
-          <ion-segment-view>
-            <ion-segment-content id="first">First</ion-segment-content>
-            <ion-segment-content id="second">Second</ion-segment-content>
-            <ion-segment-content id="third">Third</ion-segment-content>
-          </ion-segment-view>
+         <aside class="ccd-filters ccd_form_group">
           
+            <!-- Search Bar -->
+          <div class="ccd_search_bar_wrap ccd_search_bar">
+            <ion-input label="Search by Keyword" label-placement="stacked" fill="solid" placeholder="e.g. Street, Reception #, PLS #, 2024"></ion-input>
+          </div>
+
+            <!-- Second Filter Group -->
+          <div class="form_control_group">
+                  <ion-segment>
+                    <ion-segment-button value="first" content-id="first">
+                      <ion-label>Subdivision</ion-label>
+                    </ion-segment-button>
+                    <ion-segment-button value="second" content-id="second">
+                      <ion-label>Land Survey</ion-label>
+                    </ion-segment-button>
+                    <ion-segment-button value="third" content-id="third">
+                      <ion-label>Tie Book</ion-label>
+                    </ion-segment-button>
+                  </ion-segment>
+
+                  <ion-segment-view>
+                    <ion-segment-content id="first">
+                      <ion-grid class="ion-no-padding ccd-form-padding">
+                        <ion-row>
+                          <ion-col>
+                            <h6>TDR</h6>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="6">
+                            <ion-input label="Quarter" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
+                          </ion-col>
+                          <ion-col size="6">
+                            <ion-input label="Range" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
+                          </ion-col>
+                          <ion-col size="6">
+                            <ion-input label="Section" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
+                          </ion-col>
+                          <ion-col size="6">
+                            <ion-input label="Township" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+
+                      <ion-grid class="ion-no-padding ccd-form-padding">
+                        <ion-row>
+                          <ion-col>
+                            <h6>Reception Date</h6>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="6">
+                            <ion-input label="Start Date" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
+                          </ion-col>
+                          <ion-col size="6">
+                            <ion-input label="End Date" label-placement="stacked" fill="solid" placeholder="e.g. 34-2434"></ion-input>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+
+
+                    </ion-segment-content>
+                    <ion-segment-content id="second">
+                      <ion-grid class="ion-no-padding ccd-form-padding">
+                        <ion-row>
+                          <ion-col>
+                            <h6>TDR 2</h6>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="6">
+                            <ion-input label="Quarter" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
+                          </ion-col>
+                          <ion-col size="6">
+                            <ion-input label="Range" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
+                          </ion-col>
+                          <ion-col size="6">
+                            <ion-input label="Section" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
+                          </ion-col>
+                          <ion-col size="6">
+                            <ion-input label="Township" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-segment-content>
+                    <ion-segment-content id="third">
+                      <ion-grid class="ion-no-padding ccd-form-padding">
+                        <ion-row>
+                          <ion-col>
+                            <h6>Other Attributes</h6>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="12">
+                            <ion-input label="Subdivision Plat Type" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
+                          </ion-col>
+                          <ion-col size="12">
+                            <ion-input label="Reception N" label-placement="stacked" fill="solid" placeholder="e.g. 34-2434"></ion-input>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-segment-content>
+                  </ion-segment-view>
+
+                <footer class="ccd-footer">
+                        <ion-button fill="outline">Reset</ion-button>
+                        <ion-button fill="solid">Apply Filters</ion-button>
+                </footer>
+
+            </div>
          </aside>
         <aside>
             <ion-card class="ccd_ion_select_card">
@@ -210,9 +300,9 @@
               <ion-card-content>
                 
                 <div class="ccd_form_group">
-                  <ion-input label="Solid input" label-placement="floating" fill="solid" placeholder="Enter text"></ion-input>
+                  <ion-input label="Solid input" label-placement="stacked" fill="solid" placeholder="Enter text"></ion-input>
                     <br />
-                  <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+                  <ion-input label="Outline input" label-placement="stacked" fill="outline" placeholder="Enter text"></ion-input>
                 </div>
 
               </ion-card-content>

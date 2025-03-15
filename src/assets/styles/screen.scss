@@ -133,13 +133,158 @@ a:focus {
 
 //Form Controls 
 
+//Main Resets for Ion-Input, Ion-Select
+
+ion-select.ion-focusable,
+ion-input.sc-ion-input-md-h {
+    --highlight-color-focused: var(--ion-color-secondary, #0072C9);
+    --highlight-color-invalid: var(--ion-color-danger, #FC5757);
+    --highlight-color-valid: var(--ion-color-success, #2DD36F);
+
+	--background: var(--ccd-color-white, #ffffff);
+
+	.label-text-wrapper{
+		font-weight: var(--ccd-font-weight-heading, 700);
+	}
+	.native-input.sc-ion-input-md{
+		font-size: var(--ccd-font-size-h5, 1.125rem);
+	}
+
+}
+//Height of fields
+
+ion-input.input-fill-solid.sc-ion-input-md-h,
+ion-input.input-fill-outline.sc-ion-input-md-h
+{
+	min-height: 60px;
+}
+
+
+//Main Ion Input
+ion-input.input-fill-solid.sc-ion-input-md-h{
+
+	--background: var(--ccd-color-white, #ffffff);
+	--border-color: var(--ion-color-medium, #D5D5D5);
+	
+	.input-wrapper.sc-ion-input-md {
+		border-end-end-radius: var(--border-radius);
+		border-end-start-radius: var(--border-radius);		
+		border: var(--border-width) var(--border-style) var(--border-color)
+	}
+
+
+
+	&.has-focus .input-wrapper.sc-ion-input-md{
+		border-end-end-radius: 0;
+		border-end-start-radius: 0;
+		border-color: transparent;
+	}
+
+	&.has-focus{
+		--background: var(--ccd-color-powder-blue, #B0C4DE);
+	}
+}
+
+@media (any-hover: hover) {
+    ion-input.input-fill-solid.sc-ion-input-md-h:hover {
+        --background: var(--ccd-color-powder-blue, #B0C4DE);
+        --border-color: transparent;
+    }
+
+	.ccd_search_bar_wrap ion-input.input-fill-solid.sc-ion-input-md-h:hover {
+		--border-color: var(--ion-color-medium, #D5D5D5);
+		--background: var(--ion-color-primary-contrast, #ffffff);
+	}
+}
+
 //Searchbar wrap
 .ccd_search_bar_wrap{
 	background-color: var(--ion-color-secondary, #0072C9);
 	padding: 1rem;
+
+	border-bottom: var(--ion-color-medium, #D5D5D5) 1px solid;
 	//Add global variable
-	border-radius: 4px;
+	border-radius: calc(1rem * 0.5);
+	border-end-start-radius: 0;
+	border-end-end-radius: 0;
+	
+	ion-input.input-fill-solid{
+		--highlight-color-focused: var(--ion-color-success, #2DD36F);
+		--border-color: var(--ccd-color-powder-blue, #E6F4FF);
+
+		--background: var(--ion-color-light, #E5E5E5);
+		&.has-focus{
+			--background: var(--ion-color-primary-contrast, #ffffff);
+
+			outline: red 4px dashed;
+			outline-offset: 4px;
+		}
+	}
+	
+	
 }
+
+//Helper Classes for form layouts
+.ccd-form-padding{
+	padding: 0 8px 0;
+
+	ion-row{
+		padding: 0 4px;
+	}
+	ion-col{
+		padding: 0 4px 8px; //create_ vars for sizes, sz:4px, sz:8px, sz:16px
+	}
+}
+//Filter Controls Component
+.ccd_form_group{
+	
+	h6{
+		margin-bottom: 0;
+		color: var(--ion-color-secondary, #0072C9);
+	}
+}
+
+
+//Ion Buttons
+
+.ccd-filters{
+	border: var(--ion-color-medium, #D5D5D5) 1px solid;
+	border-radius: 8px;
+	overflow: hidden;
+	margin-bottom: 1rem;;
+}
+
+.ccd-footer{
+	padding: 16px;
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+    gap: 4px;
+
+	ion-button{
+		width: 100%;
+	}
+}
+
+ion-buttons.sc-ion-buttons-md-s {
+
+
+		.button-solid{
+			--background: var(--ion-color-secondary, #0072C9);
+			--background-hover: var(--ion-color-secondary-shade, #005596);
+			--background-active: var(--ion-color-secondary-tint, #1a80ce);
+			--background-activated: var(--ion-color-secondary-tint, #1a80ce);
+			--background-focused: var(--ion-color-secondary-tint, #1a80ce);
+			--color: var(--ccd-color-white, #ffffff);
+		}
+}
+
+ion-segment{
+	border-bottom: 1px solid var(--ion-color-medium, #D5D5D5);
+    margin-bottom: 0;
+}
+
+ion-segment-button,
 ion-button,
 button {
 	font-weight: bold;
@@ -164,10 +309,16 @@ ion-button.button-solid {
     --background-hover-opacity: 1;
 }
 
-ion-select.ion-focusable,
-ion-input.sc-ion-input-md-h {
-    --highlight-color-focused: var(--ion-color-secondary, #0072C9);
-    --highlight-color-invalid: var(--ion-color-danger, #FC5757);
-    --highlight-color-valid: var(--ion-color-success, #2DD36F);
-}
 //END Form Controls 
+
+
+//Segments
+ion-segment-button.segment-button-checked{
+	--color-checked: var(--ion-color-secondary, #0072C9);
+	--background-checked: var(--ccd-color-lightblue, #E6F4FF);
+}
+
+//Aside Col Layout
+.ccd_aside_col{
+
+}

@@ -53,7 +53,7 @@
 	--ion-color-primary-shade: #00284c;
 	--ion-color-primary-tint: #1a4267;
 
-	--ion-color-secondary: #0072C9;
+	--ion-color-secondary: #0072C9; //CCD Denver Blue
 	--ion-color-secondary-rgb: 0,114,201;
 	--ion-color-secondary-contrast: #ffffff;
 	--ion-color-secondary-contrast-rgb: 255,255,255;
@@ -108,5 +108,19 @@
 	--ion-color-dark-contrast-rgb: 255,255,255;
 	--ion-color-dark-shade: #101010;
 	--ion-color-dark-tint: #2a2a2a;
+
+	--ccd-color-white: #ffffff;
+	--ccd-color-gray: #555555;
+	--ccd-color-powder-blue: #E6F4FF;
+	--ccd-color-lightblue: #F5FAFF;
+	
+	//Segment buttons and UI
+	--color-checked: var(--ion-color-secondary, #0072C9);
+
+	//Hightlight Stuff for forms
+	--highlight-color-focused: var(--ion-color-secondary, #0072C9);
+    --highlight-color-invalid: var(--ion-color-danger, #FC5757);
+    --highlight-color-valid: var(--ion-color-success, #2DD36F);
+	
 
 }
