@@ -135,7 +135,7 @@ a:focus {
 
 //Main Resets for Ion-Input, Ion-Select
 
-ion-select.ion-focusable,
+ion-select.select-label-placement-stacked,
 ion-input.sc-ion-input-md-h {
     --highlight-color-focused: var(--ion-color-secondary, #0072C9);
     --highlight-color-invalid: var(--ion-color-danger, #FC5757);
@@ -152,7 +152,7 @@ ion-input.sc-ion-input-md-h {
 
 }
 //Height of fields
-
+ion-select.select-label-placement-stacked,
 ion-input.input-fill-solid.sc-ion-input-md-h,
 ion-input.input-fill-outline.sc-ion-input-md-h
 {
@@ -185,6 +185,7 @@ ion-input.input-fill-solid.sc-ion-input-md-h{
 	}
 }
 
+
 @media (any-hover: hover) {
     ion-input.input-fill-solid.sc-ion-input-md-h:hover {
         --background: var(--ccd-color-powder-blue, #B0C4DE);
@@ -196,6 +197,53 @@ ion-input.input-fill-solid.sc-ion-input-md-h{
 		--background: var(--ion-color-primary-contrast, #ffffff);
 	}
 }
+
+//Ion Select
+ion-select.select-label-placement-stacked{
+	overflow: hidden;
+	border: 1px solid var(--ion-color-medium, #D5D5D5);;
+	border-radius: 4px;
+
+	&.select-expanded{
+		border-end-end-radius: 0;
+		border-end-start-radius: 0;
+		border-color: transparent;
+
+		--background: var(--ccd-color-powder-blue, #B0C4DE);
+		border-bottom: var(	--highlight-color-focused, var(--ion-color-secondary, #0072C9)) 1px solid;
+		
+	}
+}
+ion-select::part(label){
+	padding: 0 1.4rem;
+	font-size: 1rem;
+	font-weight: var(--ccd-font-weight-heading);
+	color: var(--ion-color-dark, #121212);
+}
+ion-select::part(container){
+	padding: 0 1rem;
+	font-size: 1rem;
+	color: var(--ion-color-dark, #121212);
+}
+
+ion-select::part(icon){
+	padding:0 1rem;
+}
+ion-select.select-label-placement-stacked.select-expanded{
+	--background: var(--ccd-color-powder-blue, #B0C4DE);
+	--border-color: transparent;
+	border-end-end-radius: 0;
+	border-end-start-radius: 0;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-top-color: transparent;
+}
+ion-select.select-label-placement-stacked:hover{
+	--background: var(--ccd-color-powder-blue, #B0C4DE);
+	border-color: transparent;
+}
+
+
 
 //Searchbar wrap
 .ccd_search_bar_wrap{

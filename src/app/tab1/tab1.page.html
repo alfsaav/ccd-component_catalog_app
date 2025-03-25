@@ -14,7 +14,20 @@
         <!-- MAIN Content -->
         <main class="ccd_main_layout ccd_typography_encapsulated">
           
-          
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>CCD Select combobox</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+
+            <ion-card-content>
+              <ion-select label="Pick a fruit" label-placement="stacked" aria-label="Fruit" interface="popover" placeholder="Select fruit">
+                <ion-select-option value="apples">Apples</ion-select-option>
+                <ion-select-option value="oranges">Oranges</ion-select-option>
+                <ion-select-option value="bananas">Bananas</ion-select-option>
+              </ion-select>
+            </ion-card-content>
+          </ion-card>
           <h1 class="ccd_main_layout_title">Component Catalog</h1>
           <p class="ccd_main_layout_subtitle">This is a catalog of all the components used in the DSDS app.</p>
 
@@ -114,6 +127,10 @@
                 </ion-list>
               </ion-card-content>
             </ion-card>
+          
+              
+            
+
 
           <ion-card>
             <ion-card-header>
@@ -195,7 +212,11 @@
                             <ion-input label="Quarter" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
                           </ion-col>
                           <ion-col size="6">
-                            <ion-input label="Range" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
+                            <ion-select label="Pick a fruit" label-placement="stacked" aria-label="Fruit" interface="popover" placeholder="Select fruit">
+                              <ion-select-option value="apples">Apples</ion-select-option>
+                              <ion-select-option value="oranges">Oranges</ion-select-option>
+                              <ion-select-option value="bananas">Bananas</ion-select-option>
+                            </ion-select>
                           </ion-col>
                           <ion-col size="6">
                             <ion-input label="Section" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
