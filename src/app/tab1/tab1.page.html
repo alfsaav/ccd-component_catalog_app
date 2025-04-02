@@ -20,12 +20,55 @@
               <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
             </ion-card-header>
 
-            <ion-card-content>
-              <ion-select label="Pick a fruit" label-placement="stacked" aria-label="Fruit" interface="popover" placeholder="Select fruit">
-                <ion-select-option value="apples">Apples</ion-select-option>
-                <ion-select-option value="oranges">Oranges</ion-select-option>
-                <ion-select-option value="bananas">Bananas</ion-select-option>
-              </ion-select>
+            <ion-card-content class="ion-no-padding">
+
+              <ion-grid class="ion-no-padding ccd-form-padding">
+                <ion-row>
+                  <ion-col size-lg="6">
+                    <ion-textarea label="Solid input" label-placement="stacked" fill="solid" placeholder="Enter text"></ion-textarea>
+                  </ion-col>
+                  <ion-col size-lg="6">
+                    <ion-select label="Pick a fruit" label-placement="stacked" aria-label="Fruit" interface="popover" placeholder="Select fruit">
+                      <ion-select-option value="apples">Apples</ion-select-option>
+                      <ion-select-option value="oranges">Oranges</ion-select-option>
+                      <ion-select-option value="bananas">Bananas</ion-select-option>
+                    </ion-select>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size-lg="6">
+                    <ion-list>
+                      <ion-item>
+                        <ion-checkbox  alignment="start">Aligned to the Start</ion-checkbox>
+                      </ion-item>
+                    
+                      <ion-item>
+                        <ion-checkbox  alignment="start">Aligned to the Center</ion-checkbox>
+                      </ion-item>
+                    </ion-list>
+                  </ion-col>
+                  <ion-col size-lg="6">
+                    <ion-list>
+                          <ion-item>
+                            <ion-radio value="grapes">Grapes</ion-radio>
+                          </ion-item>
+                          <ion-item>
+                            <ion-radio value="strawberries">Strawberries</ion-radio>
+                          </ion-item>
+                          <ion-item>
+                            <ion-radio value="pineapple">Pineapple</ion-radio>
+                          </ion-item>
+                          <ion-item>
+                            <ion-radio value="cherries">Cherries</ion-radio>
+                          </ion-item>
+                    </ion-list>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>  
+             
+            
+
+
             </ion-card-content>
           </ion-card>
           <h1 class="ccd_main_layout_title">Component Catalog</h1>
