@@ -72,6 +72,8 @@ a:focus {
 	outline: 2px solid var(--ion-color-secondary, #0072C9);
 	outline-offset: 2px;
 }
+
+
 .ccd_typography_encapsulated {
 	
 	font-family: var(--ccd-font-family);
@@ -145,6 +147,7 @@ ion-input.sc-ion-input-md-h {
 
 	.label-text-wrapper{
 		font-weight: var(--ccd-font-weight-heading, 700);
+		line-height: 1.35;
 	}
 	.native-input.sc-ion-input-md{
 		font-size: var(--ccd-font-size-h5, 1.125rem);
@@ -152,7 +155,8 @@ ion-input.sc-ion-input-md-h {
 
 }
 
-.textarea-fill-solid.sc-ion-textarea-md-h{
+
+.sc-ion-textarea-md-h{
 	--highlight-color-focused: var(--ion-color-secondary, #0072C9);
 	--highlight-color-invalid: var(--ion-color-danger, #FC5757);
     --highlight-color-valid: var(--ion-color-success, #2DD36F);
@@ -164,15 +168,9 @@ ion-checkbox{
 	--checkbox-background-checked: var(--ion-color-secondary, #0072C9);
 	--color-checked: var(--ion-color-secondary, #0072C9);
 }
-
-//Height of fields
-ion-select.select-label-placement-stacked,
-ion-input.input-fill-solid.sc-ion-input-md-h,
-ion-input.input-fill-outline.sc-ion-input-md-h
-{
-	min-height: 60px;
+ion-toggle{
+	--handle-background-checked: var(--ion-color-secondary, #0072C9);
 }
-
 
 //Main Ion Input
 ion-input.input-fill-solid.sc-ion-input-md-h{
@@ -198,8 +196,6 @@ ion-input.input-fill-solid.sc-ion-input-md-h{
 		--background: var(--ccd-color-powder-blue, #B0C4DE);
 	}
 }
-
-
 @media (any-hover: hover) {
     ion-input.input-fill-solid.sc-ion-input-md-h:hover {
         --background: var(--ccd-color-powder-blue, #B0C4DE);
@@ -291,6 +287,14 @@ ion-select.select-label-placement-stacked.ion-focusable.ion-focused{
 	
 }
 //Ion Textarea Element
+ion-textarea.sc-ion-textarea-md-h{
+
+	.label-text-wrapper{
+		font-weight: var(--ccd-font-weight-heading, 700);
+		color: var(--ion-color-dark, #121212);
+	}
+}
+
 .textarea-fill-solid.sc-ion-textarea-md-h{
 	border-radius: var(--border-radius, 4px);
 	border: var(--ion-color-medium, #D5D5D5) 1px solid;
@@ -301,10 +305,6 @@ ion-select.select-label-placement-stacked.ion-focusable.ion-focused{
   		border-radius: var(--border-radius, 4px);
 	}
 
-	.label-text-wrapper{
-		font-weight: var(--ccd-font-weight-heading, 700);
-		color: var(--ion-color-dark, #121212);
-	}
 }
 
 .textarea-fill-solid.has-focus.sc-ion-textarea-md-h{
@@ -401,15 +401,18 @@ button {
 
 ion-card {
     margin: 0 0 calc(var(--ion-padding, 8px) * 2);
+	box-shadow: none;
+    border: 1px solid var(--ion-color-medium, #D5D5D5);
 }
 
 ion-card.ion-padding {
     background-color: aliceblue;
 }
 
-ion-button.button-solid {
-    --background-hover: var(--ion-color-secondary-shade, #005596);
-    --background-hover-opacity: 1;
+ion-button.ion-focused
+{
+	outline-offset: 2px;
+	outline: 2px dashed var(--ion-color-secondary, #0072C9);
 }
 
 //END Form Controls 
@@ -423,5 +426,22 @@ ion-segment-button.segment-button-checked{
 
 //Aside Col Layout
 .ccd_aside_col{
+
+}
+
+//Ion Card Styling
+.card-content-md h3, 
+.card-content-md h4, 
+.card-content-md h5, 
+.card-content-md h6{
+	font-weight: var(--ccd-font-weight-heading, 700);
+}
+
+
+//Helper Classes
+.ccd_form_control_card{
+	ion-card-content{
+		padding-inline: 0;
+	}
 
 }

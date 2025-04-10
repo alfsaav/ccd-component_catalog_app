@@ -1,8 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      DSDS Component Catalog
-    </ion-title>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Typography</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,66 +14,8 @@
       <ion-col size-lg="8" size-md="7" size-sm="6">
         <!-- MAIN Content -->
         <main class="ccd_main_layout ccd_typography_encapsulated">
-          
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>CCD Select combobox</ion-card-title>
-              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-            </ion-card-header>
-
-            <ion-card-content class="ion-no-padding">
-
-              <ion-grid class="ion-no-padding ccd-form-padding">
-                <ion-row>
-                  <ion-col size-lg="6">
-                    <ion-textarea label="Solid input" label-placement="stacked" fill="solid" placeholder="Enter text"></ion-textarea>
-                  </ion-col>
-                  <ion-col size-lg="6">
-                    <ion-select label="Pick a fruit" label-placement="stacked" aria-label="Fruit" interface="popover" placeholder="Select fruit">
-                      <ion-select-option value="apples">Apples</ion-select-option>
-                      <ion-select-option value="oranges">Oranges</ion-select-option>
-                      <ion-select-option value="bananas">Bananas</ion-select-option>
-                    </ion-select>
-                  </ion-col>
-                </ion-row>
-                <ion-row>
-                  <ion-col size-lg="6">
-                    <ion-list>
-                      <ion-item>
-                        <ion-checkbox  alignment="start">Aligned to the Start</ion-checkbox>
-                      </ion-item>
-                    
-                      <ion-item>
-                        <ion-checkbox  alignment="start">Aligned to the Center</ion-checkbox>
-                      </ion-item>
-                    </ion-list>
-                  </ion-col>
-                  <ion-col size-lg="6">
-                    <ion-list>
-                          <ion-item>
-                            <ion-radio value="grapes">Grapes</ion-radio>
-                          </ion-item>
-                          <ion-item>
-                            <ion-radio value="strawberries">Strawberries</ion-radio>
-                          </ion-item>
-                          <ion-item>
-                            <ion-radio value="pineapple">Pineapple</ion-radio>
-                          </ion-item>
-                          <ion-item>
-                            <ion-radio value="cherries">Cherries</ion-radio>
-                          </ion-item>
-                    </ion-list>
-                  </ion-col>
-                </ion-row>
-              </ion-grid>  
-             
-            
-
-
-            </ion-card-content>
-          </ion-card>
-          <h1 class="ccd_main_layout_title">Component Catalog</h1>
-          <p class="ccd_main_layout_subtitle">This is a catalog of all the components used in the DSDS app.</p>
+          <h1 class="ccd_main_layout_title">Component Catalog ALT</h1>
+          <p class="ccd_main_layout_subtitle">This is an experiment for styling ionic 8 Components to match current Design Styling</p>
 
           <h1>Typography</h1>
 
@@ -170,12 +113,7 @@
                 </ion-list>
               </ion-card-content>
             </ion-card>
-          
-              
-            
-
-
-          <ion-card>
+             <ion-card>
             <ion-card-header>
               <ion-card-title>Ion Button</ion-card-title>
               <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
@@ -219,165 +157,7 @@
       </ion-col>
       <!-- END OF MAIN Content -->
 
-      <ion-col size="12" size-lg="4" size-md="5" size-sm="6" class="ccd_aside_col">
-        <!-- ASIDE Content -->
-         <aside class="ccd-filters ccd_form_group">
-          
-            <!-- Search Bar -->
-          <div class="ccd_search_bar_wrap ccd_search_bar">
-            <ion-input label="Search by Keyword" label-placement="stacked" fill="solid" placeholder="e.g. Street, Reception #, PLS #, 2024"></ion-input>
-          </div>
-
-            <!-- Second Filter Group -->
-          <div class="form_control_group">
-                  <ion-segment>
-                    <ion-segment-button value="first" content-id="first">
-                      <ion-label>Subdivision</ion-label>
-                    </ion-segment-button>
-                    <ion-segment-button value="second" content-id="second">
-                      <ion-label>Land Survey</ion-label>
-                    </ion-segment-button>
-                    <ion-segment-button value="third" content-id="third">
-                      <ion-label>Tie Book</ion-label>
-                    </ion-segment-button>
-                  </ion-segment>
-
-                  <ion-segment-view>
-                    <ion-segment-content id="first">
-                      <ion-grid class="ion-no-padding ccd-form-padding">
-                        <ion-row>
-                          <ion-col>
-                            <h6>TDR</h6>
-                          </ion-col>
-                        </ion-row>
-                        <ion-row>
-                          <ion-col size="6">
-                            <ion-input label="Quarter" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
-                          </ion-col>
-                          <ion-col size="6">
-                            <ion-select label="Pick a fruit" label-placement="stacked" aria-label="Fruit" interface="popover" placeholder="Select fruit">
-                              <ion-select-option value="apples">Apples</ion-select-option>
-                              <ion-select-option value="oranges">Oranges</ion-select-option>
-                              <ion-select-option value="bananas">Bananas</ion-select-option>
-                            </ion-select>
-                          </ion-col>
-                          <ion-col size="6">
-                            <ion-input label="Section" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
-                          </ion-col>
-                          <ion-col size="6">
-                            <ion-input label="Township" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
-                          </ion-col>
-                        </ion-row>
-                      </ion-grid>
-
-                      <ion-grid class="ion-no-padding ccd-form-padding">
-                        <ion-row>
-                          <ion-col>
-                            <h6>Reception Date</h6>
-                          </ion-col>
-                        </ion-row>
-                        <ion-row>
-                          <ion-col size="6">
-                            <ion-input label="Start Date" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
-                          </ion-col>
-                          <ion-col size="6">
-                            <ion-input label="End Date" label-placement="stacked" fill="solid" placeholder="e.g. 34-2434"></ion-input>
-                          </ion-col>
-                        </ion-row>
-                      </ion-grid>
-
-
-                    </ion-segment-content>
-                    <ion-segment-content id="second">
-                      <ion-grid class="ion-no-padding ccd-form-padding">
-                        <ion-row>
-                          <ion-col>
-                            <h6>TDR 2</h6>
-                          </ion-col>
-                        </ion-row>
-                        <ion-row>
-                          <ion-col size="6">
-                            <ion-input label="Quarter" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
-                          </ion-col>
-                          <ion-col size="6">
-                            <ion-input label="Range" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
-                          </ion-col>
-                          <ion-col size="6">
-                            <ion-input label="Section" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
-                          </ion-col>
-                          <ion-col size="6">
-                            <ion-input label="Township" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
-                          </ion-col>
-                        </ion-row>
-                      </ion-grid>
-                    </ion-segment-content>
-                    <ion-segment-content id="third">
-                      <ion-grid class="ion-no-padding ccd-form-padding">
-                        <ion-row>
-                          <ion-col>
-                            <h6>Other Attributes</h6>
-                          </ion-col>
-                        </ion-row>
-                        <ion-row>
-                          <ion-col size="12">
-                            <ion-input label="Subdivision Plat Type" label-placement="stacked" fill="solid" placeholder="Any"></ion-input>
-                          </ion-col>
-                          <ion-col size="12">
-                            <ion-input label="Reception N" label-placement="stacked" fill="solid" placeholder="e.g. 34-2434"></ion-input>
-                          </ion-col>
-                        </ion-row>
-                      </ion-grid>
-                    </ion-segment-content>
-                  </ion-segment-view>
-
-                <footer class="ccd-footer">
-                        <ion-button fill="outline">Reset</ion-button>
-                        <ion-button fill="solid">Apply Filters</ion-button>
-                </footer>
-
-            </div>
-         </aside>
-        <aside>
-            <ion-card class="ccd_ion_select_card">
-
-              <ion-card-header>
-                <ion-card-title>Select</ion-card-title>
-                <ion-card-subtitle>Form Control Fields</ion-card-subtitle>
-              </ion-card-header>
-
-              <ion-card-content>
-                <ion-select aria-label="Fruit" interface="popover" placeholder="Select fruit">
-                  <ion-select-option value="apples">Apples</ion-select-option>
-                  <ion-select-option value="oranges">Oranges</ion-select-option>
-                  <ion-select-option value="bananas">Bananas</ion-select-option>
-                </ion-select>
-               </ion-card-content>
-            </ion-card>
-
-            <ion-card class="Ion Input Field">
-
-              <ion-card-header>
-                <ion-card-title>Input FIeld</ion-card-title>
-                <ion-card-subtitle>Form Control Fields</ion-card-subtitle>
-              </ion-card-header>
-    
-              <ion-card-content>
-                
-                <div class="ccd_form_group">
-                  <ion-input label="Solid input" label-placement="stacked" fill="solid" placeholder="Enter text"></ion-input>
-                    <br />
-                  <ion-input label="Outline input" label-placement="stacked" fill="outline" placeholder="Enter text"></ion-input>
-                </div>
-
-              </ion-card-content>
-            </ion-card>
-        </aside>
-      </ion-col>
-
-      <!-- END OF ASIDE Content -->
-</ion-row>
-</ion-grid>
-
-<app-explore-container name="Tab 1121 pagEEE"></app-explore-container>
+    </ion-row>
+  </ion-grid>
   
 </ion-content>

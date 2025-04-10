@@ -3,7 +3,10 @@
 
 :root {
 
-	--ccd-font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+	//Typography vars
+	--ion-font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+	
+	--ccd-font-family: var(--ion-font-family, 'Proxima Nova', Arial, Helvetica, sans-serif);
     --ccd-font-size-base: 1rem; //16px
     --ccd-font-size-h1: 2.25rem; // 36px 
 	--ccd-font-size-h2: 2rem; // 32px
@@ -108,6 +111,8 @@
 	--ion-color-dark-contrast-rgb: 255,255,255;
 	--ion-color-dark-shade: #101010;
 	--ion-color-dark-tint: #2a2a2a;
+
+	--ion-card-color: #121212;
 
 	--ccd-color-orange: #D9531E;
 	--ccd-color-white: #ffffff;

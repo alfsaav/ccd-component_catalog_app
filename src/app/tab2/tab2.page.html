@@ -1,17 +1,297 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>
-      Photo Gallery
+      Form Controls
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Photo Gallery</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Photo Gallery page"></app-explore-container>
+<ion-grid>
+  <ion-row>
+    <ion-col size-lg="4" size-md="6" size-sm="12">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Ion Button</ion-card-title>
+          <ion-card-subtitle>Set of examples</ion-card-subtitle>
+        </ion-card-header>
+    
+        <ion-card-content>
+          <h3>Ion Button Example</h3>
+          <ion-button fill="solid" color="primary">Solid Primary</ion-button>
+          <ion-button fill="solid" color="secondary">Solid Secondary</ion-button>
+          <ion-button fill="solid" color="tertiary">Solid Tertiary</ion-button>
+          <ion-button fill="solid" color="warning">Solid Warning</ion-button>
+          <ion-button fill="solid" color="success">Solid Success</ion-button>
+          <ion-button fill="solid" color="danger">Solid Danger</ion-button>
+          <ion-button fill="outline" color="primary">Outline Primary</ion-button>
+          <ion-button fill="outline" color="secondary">Outline Secondary</ion-button>
+          <ion-button fill="clear" color="primary">Clear Primary</ion-button>
+          <ion-button fill="clear" color="secondary">Clear Secondary</ion-button>
+          <ion-button fill="clear" color="tertiary">Clear Tertiary</ion-button>
+          <ion-button fill="clear" color="danger">Clear Danger</ion-button>
+          <ion-button fill="clear" color="light">Clear Light</ion-button>
+          <ion-button fill="clear" color="medium">Clear Medium</ion-button>
+          <ion-button fill="clear" color="dark">Clear Dark</ion-button>
+          
+          
+          <ion-grid class="ion-no-padding">
+            <ion-row>
+              <ion-col> <ion-button expand="block">Expand Block</ion-button></ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col> <ion-button expand="full">Expand Full</ion-button></ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col> <ion-button expand="fixed">Expand Fixed</ion-button></ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col> 
+                <ion-button>Default</ion-button> 
+                <ion-button shape="round">Round</ion-button> 
+                <ion-button>
+                  <ion-icon slot="icon-only" name="heart"></ion-icon>
+                </ion-button> 
+                <ion-button shape="round">
+                  <ion-icon slot="icon-only" name="heart"></ion-icon>
+                </ion-button> 
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col> 
+                <ion-button>Default</ion-button> 
+                <ion-button fill="clear">Clear</ion-button> 
+                <ion-button fill="outline">Outline</ion-button> 
+                <ion-button fill="solid">Solid</ion-button> 
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <!-- Text Input Field -->
+    <ion-col size-lg="4" size-md="6" size-sm="12">
+      <ion-card class="ccd_form_control_card">
+        <ion-card-header>
+          <ion-card-title>
+              Ion Input 
+          </ion-card-title>
+          <ion-card-subtitle>Set of examples</ion-card-subtitle>
+        </ion-card-header>
+          <ion-card-content>
+            <ion-title>
+              <h3>Ion Input Example</h3>
+            </ion-title>
+            <ion-grid class="ion-no-padding ccd-form-padding">
+                <ion-row>
+                  <ion-col size-lg="6">
+                    <ion-input label="Solid input" required="true" label-placement="stacked" fill="solid" placeholder="Enter text"></ion-input>
+                  </ion-col>
+                  <ion-col size-lg="6">
+                    <ion-input label="Outline input" label-placement="stacked" fill="outline" placeholder="Enter text"></ion-input>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size-lg="6">
+                    <ion-input label="Clear input" label-placement="stacked" fill="clear" placeholder="Enter text"></ion-input>
+                  </ion-col>
+                  <ion-col size-lg="6">
+                    <ion-input label="Disabled input" label-placement="stacked" fill="solid" placeholder="Enter text" disabled></ion-input>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size-lg="6">
+                    <ion-input label="Readonly input" label-placement="stacked" fill="solid" placeholder="Enter text" readonly></ion-input>
+                  </ion-col>
+                  <ion-col size-lg="6">
+                    <ion-input label="Floating input" label-placement="floating" fill="solid" placeholder="Enter text"></ion-input>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size-lg="6">
+                    <ion-input label="Floating input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+                  </ion-col>
+                  <ion-col size-lg="6">
+                    <ion-input label="Floating input" label-placement="floating" fill="clear" placeholder="Enter text"></ion-input>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size-lg="6">
+                    <ion-input label="Floating input" label-placement="floating" fill="solid" placeholder="Enter text" disabled></ion-input>
+                  </ion-col>
+                  <ion-col size-lg="6">
+                    <ion-input label="Floating input" label-placement="floating" fill="solid" placeholder="Enter text" readonly></ion-input>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size-lg="6">
+                    <ion-input label="Floating input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+                  </ion-col>
+                  <ion-col size-lg="6">
+                    <ion-input label="Floating input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+                  </ion-col>
+                </ion-row>
+            </ion-grid>
+          </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <!-- Ion Select  -->
+    <ion-col size-lg="4" size-md="6" size-sm="12">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Ion Select</ion-card-title>
+          <ion-card-subtitle>Set of examples</ion-card-subtitle>
+        </ion-card-header>
+    
+        <ion-card-content class="ion-no-padding">
+    
+          <ion-grid class="ion-no-padding ccd-form-padding">
+            <ion-row>
+              <ion-col size-lg="6">
+                <ion-select label="Pick a fruit" label-placement="stacked" aria-label="Fruit" interface="popover" placeholder="Select fruit">
+                  <ion-select-option value="apples">Apples</ion-select-option>
+                  <ion-select-option value="oranges">Oranges</ion-select-option>
+                  <ion-select-option value="bananas">Bananas</ion-select-option>
+                </ion-select>
+              </ion-col>
+            </ion-row>
+          
+          </ion-grid>  
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size-lg="4" size-md="6" size-sm="12">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Ion Toggle</ion-card-title>
+          <ion-card-subtitle>Set of examples</ion-card-subtitle>
+        </ion-card-header>
+    
+        <ion-card-content class="ion-no-padding">
+    
+          <ion-grid class="ion-no-padding ccd-form-padding">
+            <ion-row>
+              <ion-col size-lg="6">
+                <ion-toggle>Default Toggle</ion-toggle><br /><br />
+                <ion-toggle [checked]="true">Checked Toggle</ion-toggle><br /><br />
+                <ion-toggle [disabled]="true">Disabled Toggle</ion-toggle><br /><br />
+                <ion-toggle [checked]="true" [disabled]="true">Disabled Checked Toggle</ion-toggle>
+              </ion-col>
+              
+            </ion-row>
+          </ion-grid>  
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size-lg="4" size-md="6" size-sm="12">
+      <ion-card>
+      <ion-card-header>
+        <ion-card-title>Ion Checkbox</ion-card-title>
+        <ion-card-subtitle>Set of examples</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content class="ion-no-padding">
+    
+        <ion-grid class="ion-no-padding ccd-form-padding">
+        <ion-row>
+          <ion-col size-lg="6">
+            <h3>What is your favorite Sport?</h3>
+            <ion-list>
+                <ion-item>
+                <ion-checkbox value="soccer">Soccer</ion-checkbox>
+                </ion-item>
+                <ion-item>
+                <ion-checkbox value="basketball">Basketball</ion-checkbox>
+                </ion-item>
+                <ion-item>
+                <ion-checkbox value="tennis">Tennis</ion-checkbox>
+                </ion-item>
+                <ion-item>
+                <ion-checkbox value="swimming">Swimming</ion-checkbox>
+                </ion-item>
+            </ion-list>
+          </ion-col>
+          
+        </ion-row>
+        </ion-grid>  
+      </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size-lg="4" size-md="6" size-sm="12">
+      <ion-card>
+      <ion-card-header>
+        <ion-card-title>Ion Radio Buttons</ion-card-title>
+        <ion-card-subtitle>Set of examples</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content class="ion-no-padding">
+    
+        <ion-grid class="ion-no-padding ccd-form-padding">
+        <ion-row>
+          <ion-col size-lg="6">
+            <h3>What is your favorite Fruit?</h3>
+            <ion-list>
+                  <ion-item>
+                    <ion-radio value="grapes">Grapes</ion-radio>
+                  </ion-item>
+                  <ion-item>
+                    <ion-radio value="strawberries">Strawberries</ion-radio>
+                  </ion-item>
+                  <ion-item>
+                    <ion-radio value="pineapple">Pineapple</ion-radio>
+                  </ion-item>
+                  <ion-item>
+                    <ion-radio value="cherries">Cherries</ion-radio>
+                  </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+        </ion-grid>  
+      </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size-lg="4" size-md="6" size-sm="12">
+      <ion-card>
+      <ion-card-header>
+        <ion-card-title>Ion TextArea</ion-card-title>
+        <ion-card-subtitle>Set of examples</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content class="ion-no-padding">
+    
+        <ion-grid class="ion-no-padding ccd-form-padding">
+        <ion-row>
+            <ion-col size="12">
+            <ion-textarea label="Solid input" label-placement="stacked" fill="solid" placeholder="Enter text"></ion-textarea>
+            </ion-col>
+            <ion-col size="12">
+            <ion-textarea label="Outline input" label-placement="stacked" fill="outline" placeholder="Enter text"></ion-textarea>
+            </ion-col>
+            <ion-col size="12">
+            <ion-textarea label="Clear input" label-placement="stacked" fill="clear" placeholder="Enter text"></ion-textarea>
+            </ion-col>
+            <ion-col size="12">
+            <ion-textarea label="Disabled input" label-placement="stacked" fill="solid" placeholder="Enter text" disabled></ion-textarea>
+            </ion-col>
+            <ion-col size="12">
+            <ion-textarea label="Readonly input" label-placement="stacked" fill="solid" placeholder="Enter text" readonly></ion-textarea>
+            </ion-col>
+            <ion-col size="12">
+            <ion-textarea label="Floating input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-textarea>
+            </ion-col>
+        </ion-row>
+        </ion-grid>  
+      </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>  
 </ion-content>
