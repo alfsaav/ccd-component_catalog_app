@@ -10,17 +10,6 @@ body {
 //Typography
 // Custom Typography Styles for Headings, paragraphs, and other text elements
 
-// --ccd-font-size-base: 1.125rem;
-// --ccd-font-size-h1: 2.25rem;
-// --ccd-font-size-h2: 2rem;
-// --ccd-font-size-h3: 1.5rem;
-// --ccd-font-size-h4: 1.25rem;
-// --ccd-font-size-h5: 1.125rem;
-// --ccd-font-size-h6: 1rem;
-// --ccd-line-height-base: 1.222;
-// --ccd-line-height-h6: 1.1875;
-// --ccd-font-weight-heading: 700;
-
 h1 {
 	font-size: var(--ccd-font-size-h1, 2.25rem);
 }
@@ -202,26 +191,24 @@ ion-input.input-fill-solid.sc-ion-input-md-h{
         --border-color: transparent;
     }
 	
-	// .ccd_search_bar_wrap ion-input.input-fill-solid.sc-ion-input-md-h:hover {
-	// 	--border-color: var(--ion-color-medium, #D5D5D5);
-	// 	--background: var(--ion-color-primary-contrast, #ffffff);
-	// }
 }
 
 //Ion Select
 ion-select.select-label-placement-stacked{
 	overflow: hidden;
-	border: 1px solid var(--ion-color-medium, #D5D5D5);;
+	border: 1px solid var(--ion-color-medium, #D5D5D5);
 	border-radius: 4px;
 
 	&.select-expanded{
+		border-color: transparent;
+		border-bottom: var(	--highlight-color-focused, var(--ion-color-secondary, #0072C9)) 1px solid;
+		--background: var(--ccd-color-powder-blue, #B0C4DE);
+		--border-color: transparent;
 		border-end-end-radius: 0;
 		border-end-start-radius: 0;
-		border-color: transparent;
-
-		--background: var(--ccd-color-powder-blue, #B0C4DE);
-		border-bottom: var(	--highlight-color-focused, var(--ion-color-secondary, #0072C9)) 1px solid;
-		
+		border-left-color: transparent;
+		border-right-color: transparent;
+		border-top-color: transparent;
 	}
 }
 ion-select::part(label){
@@ -240,13 +227,7 @@ ion-select::part(icon){
 	padding:0 1rem;
 }
 ion-select.select-label-placement-stacked.select-expanded{
-	--background: var(--ccd-color-powder-blue, #B0C4DE);
-	--border-color: transparent;
-	border-end-end-radius: 0;
-	border-end-start-radius: 0;
-	border-left-color: transparent;
-	border-right-color: transparent;
-	border-top-color: transparent;
+
 }
 ion-select.select-label-placement-stacked.ion-focusable.ion-focused,
 ion-select.select-label-placement-stacked:hover{
@@ -327,6 +308,11 @@ ion-textarea.sc-ion-textarea-md-h{
 	border-color: transparent;
 }
 
+
+
+//END Form Controls 
+
+
 //Helper Classes for form layouts
 .ccd-form-padding{
 	padding: 0 8px 0;
@@ -340,7 +326,7 @@ ion-textarea.sc-ion-textarea-md-h{
 }
 //Filter Controls Component
 .ccd_form_group{
-	
+	font-size: var(--ccd-font-size-base, 1rem);
 	h6{
 		margin-bottom: 0;
 		color: var(--ion-color-secondary, #0072C9);
@@ -348,7 +334,7 @@ ion-textarea.sc-ion-textarea-md-h{
 }
 
 
-//Ion Buttons
+//Button Groups 
 
 .ccd-filters{
 	border: var(--ion-color-medium, #D5D5D5) 1px solid;
@@ -368,7 +354,7 @@ ion-textarea.sc-ion-textarea-md-h{
 		width: 100%;
 	}
 }
-
+//Ion Buttons
 ion-buttons.sc-ion-buttons-md-s {
 
 
@@ -382,11 +368,13 @@ ion-buttons.sc-ion-buttons-md-s {
 		}
 }
 
+//Ion Segment
 ion-segment{
 	border-bottom: 1px solid var(--ion-color-medium, #D5D5D5);
     margin-bottom: 0;
 }
 
+//Component Resets. 
 ion-segment-button,
 ion-button,
 button {
@@ -394,11 +382,14 @@ button {
 	text-transform: capitalize;
     --box-shadow: 0 0 0 0;
 }
+//Segments
+ion-segment-button.segment-button-checked{
+	--color-checked: var(--ion-color-secondary, #0072C9);
+	--background-checked: var(--ccd-color-lightblue, #E6F4FF);
+}
 
-.ccd_form_group{
-	font-size: var(--ccd-font-size-base, 1rem);
-}	
 
+//Ion Card
 ion-card {
     margin: 0 0 calc(var(--ion-padding, 8px) * 2);
 	box-shadow: none;
@@ -415,14 +406,6 @@ ion-button.ion-focused
 	outline: 2px dashed var(--ion-color-secondary, #0072C9);
 }
 
-//END Form Controls 
-
-
-//Segments
-ion-segment-button.segment-button-checked{
-	--color-checked: var(--ion-color-secondary, #0072C9);
-	--background-checked: var(--ccd-color-lightblue, #E6F4FF);
-}
 
 //Aside Col Layout
 .ccd_aside_col{
@@ -436,7 +419,6 @@ ion-segment-button.segment-button-checked{
 .card-content-md h6{
 	font-weight: var(--ccd-font-weight-heading, 700);
 }
-
 
 //Helper Classes
 .ccd_form_control_card{
