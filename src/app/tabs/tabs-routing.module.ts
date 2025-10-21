@@ -27,6 +27,10 @@ const routes: Routes = [
     ]
   },
   {
+    path: 'new-shell',
+    loadChildren: () => import('../new-shell/new-shell.module').then(m => m.NewShellPageModule)
+  },
+  {
     path: '',
     redirectTo: '/tabs/tab1',
     pathMatch: 'full'

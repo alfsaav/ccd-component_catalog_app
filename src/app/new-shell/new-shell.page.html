@@ -1,0 +1,174 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>New Shell Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content id="ccd_shell_doc">
+<header class="ccd_header">
+  <ion-grid class="ion-no-padding ccd_wrap">
+    <ion-row>
+      <ion-col size="6" class="ion-align-self-center">
+        <div class="ccd-logo-wrap">
+          <img src="assets/images/denver-logo-default@2x.svg" alt="CCD Logo" class="ccd-logo">
+        </div>
+      </ion-col>
+      <ion-col size="6" class="ion-text-end ion-align-self-center">
+          <nav>
+          <a href="#">Menu</a>
+          <a href="#">Night Theme Toggle</a>
+          <a href="#">Admin Theme</a>
+          <ion-button>
+              <ion-icon slot="icon-only" name="heart"></ion-icon>
+          </ion-button> 
+        </nav>
+      </ion-col>
+    </ion-row>
+  </ion-grid>  
+</header>
+
+<main class="ccd_typography_encapsulated ccd_main">
+
+  <ion-grid class="ccd_wrap">
+   
+          <h1>New Shell Page</h1>
+          <p>This is the new shell page content area.</p>
+
+          <ion-grid class="ion-no-padding">
+
+            <ion-card>
+              <ion-list-header>Appearance</ion-list-header>
+              <ion-list [inset]="true">
+                <ion-item [button]="true">Text Size</ion-item>
+                <ion-item>
+                  <ion-toggle justify="space-between">Bold Text</ion-toggle>
+                </ion-item>
+              </ion-list>
+
+              <ion-list-header>Brightness</ion-list-header>
+              <ion-list [inset]="true">
+                <ion-item>
+                  <ion-range value="40">
+                    <ion-icon name="sunny-outline" slot="start"></ion-icon>
+                    <ion-icon name="sunny" slot="end"></ion-icon>
+                  </ion-range>
+                </ion-item>
+                <ion-item>
+                  <ion-toggle justify="space-between" checked>True Tone</ion-toggle>
+                </ion-item>
+              </ion-list>
+
+              <ion-list [inset]="true">
+                <ion-item [button]="true">
+                  <ion-label>Night Shift</ion-label>
+                  <ion-text slot="end" color="medium">9:00 PM to 8:00 AM</ion-text>
+                </ion-item>
+              </ion-list>
+            </ion-card>
+
+                    <ion-row>
+                      <ion-col> <ion-button expand="block">Expand Block</ion-button></ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col> <ion-button expand="full">Expand Full</ion-button></ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col> <ion-button expand="fixed">Expand Fixed</ion-button></ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col> 
+                        <ion-button>Default</ion-button> 
+                        <ion-button shape="round">Round</ion-button> 
+                        <ion-button>
+                          <ion-icon slot="icon-only" name="heart"></ion-icon>
+                        </ion-button> 
+                        <ion-button shape="round">
+                          <ion-icon slot="icon-only" name="heart"></ion-icon>
+                        </ion-button> 
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col> 
+                        <ion-button>Default</ion-button> 
+                        <ion-button fill="clear">Clear</ion-button> 
+                        <ion-button fill="outline">Outline</ion-button> 
+                        <ion-button fill="solid">Solid</ion-button> 
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+
+              <h2>Typography</h2>
+
+                    <p>Typography is a crucial aspect of design that involves the art and technique of arranging type to make written language legible, readable, and visually appealing. In this section, we will explore various typographic elements and their usage within the DSDS app. Understanding and utilizing these elements effectively will enhance the overall user experience and ensure consistency across the application.</p>
+
+                      <h1>Header 1</h1>
+                      <h2>Header 2</h2>
+                      <h3>Header 3</h3>
+                      <h4>Header 4</h4>
+                      <h5>Header 5</h5>
+                      <h6>Header 6</h6>
+                      <p>This is a paragraph of text. It provides information about the topic at hand.</p>
+                      <a href="#">This is a link</a>
+                      <br />
+                
+                  <h3>Unordered List</h3>
+                  <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                  </ul>
+
+                  <h3>Ordered List</h3>
+                  <ol>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                  </ol>
+
+                  <h3>Inline Text Elements</h3>
+                  <p>This is an example of <strong>bold text</strong>, <em>italic text</em>, <u>underlined text</u>, and <code>inline code</code>.</p>
+
+                  <h3>Preformatted Text</h3>
+                  <pre>
+                  This is an example of preformatted text.
+                  It preserves both      spaces and line breaks.
+                  </pre>
+
+                  <h3>Code Block</h3>
+                  <pre><code>
+                  &lt;!-- This is an example of a code block --&gt;
+                
+                  </code></pre>
+
+                <blockquote>
+                  This is a blockquote. It is used to highlight a quote from a source.
+                </blockquote>
+                <dl>
+                  <dt>Term 1</dt>
+                  <dd>Description for term 1</dd>
+                  <dt>Term 2</dt>
+                  <dd>Description for term 2</dd>
+                </dl>
+                <table>
+                  <tr>
+                  <th>Header 1</th>
+                  <th>Header 2</th>
+                  </tr>
+                  <tr>
+                  <td>Data 1</td>
+                  <td>Data 2</td>
+                  </tr>
+                  <tr>
+                  <td>Data 3</td>
+                  <td>Data 4</td>
+                  </tr>
+                </table>
+  </ion-grid>   
+</main>
+  
+</ion-content>
+

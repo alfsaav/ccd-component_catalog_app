@@ -10,8 +10,8 @@
  */
 
 
-@import "./theme/variables.scss";
-
+@use "./theme/variables.scss";
+@use "./assets/styles/screen.scss";
 /* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";
 
@@ -28,7 +28,7 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
-@import "./assets/styles/screen.scss";
+
 
 /**
  * Ionic Dark Mode
@@ -37,6 +37,6 @@
  * https://ionicframework.com/docs/theming/dark-mode
  */
 
-/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+//@import "@ionic/angular/css/palettes/dark.always.css";
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 //@import "@ionic/angular/css/palettes/dark.system.css";
